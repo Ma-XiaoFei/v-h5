@@ -4,13 +4,14 @@ import router from './router'
 import store from './store'
 import '@/static/index.less'
 import '@vant/touch-emulator';
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 import vantComponent from '@/components/vant'
 Object.values(vantComponent).forEach(v=>{
   Vue.use(v);
 })
 
 router.beforeEach((to, from , next)=>{
+  document.title = to.meta[0];
   next()
 })
 new Vue({

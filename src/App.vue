@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <van-nav-bar
-      
       :title="title"
       left-text
       right-text
       left-arrow
       @click-left="onClickLeft"
     />
-   <router-view />
+
+   <router-view/>
+
     <van-tabbar @change="navChange"  border active-color="red" route safe-area-inset-bottom>
       <van-tabbar-item to="/" name="首页" icon="home-o">首页</van-tabbar-item>
       <van-tabbar-item to="/search" name="搜索" icon="search">搜索</van-tabbar-item>
@@ -21,15 +22,12 @@
 export default {
   data() {
     return {
-      title: '首页',
+      title: document.title,
       images: [
         "https://img.yzcdn.cn/vant/apple-1.jpg",
         "https://img.yzcdn.cn/vant/apple-2.jpg"
       ]
     };
-  },
-  mounted(){
-    document.title = '首页';
   },
   methods:{
     onClickLeft(){
@@ -39,6 +37,11 @@ export default {
       document.title = title;
       this.title = title;
      
+    }
+  },
+  watch:{
+    $route(e){
+      this.title = e.meta[0];
     }
   }
 };
@@ -56,8 +59,12 @@ export default {
 //   }
 // }
  
-.van-tabbar van-tabbar--fixed {
-  max-width: 800px !important;
+// .van-tabbar van-tabbar--fixed {
+  
+// }
+.van-tabbar--fixed{
+max-width: 500px !important;
+  left: auto !important;
 }
 .van-icon-arrow-left {
   font-size: 23px !important;

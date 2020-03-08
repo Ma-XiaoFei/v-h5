@@ -1,4 +1,15 @@
-import { Button,Tabbar,TabbarItem, NavBar,SwipeItem, Swipe,Lazyload } from 'vant';
+import {
+    Button,
+    Tabbar,
+    TabbarItem,
+    NavBar,
+    SwipeItem,
+    Swipe,
+    Lazyload,
+    Grid,
+    GridItem,
+    Toast
+} from 'vant';
 
 export default {
     Button,
@@ -7,5 +18,8 @@ export default {
     NavBar,
     SwipeItem,
     Swipe,
-    Lazyload
+    Lazyload,
+    Grid,
+    GridItem,
+    Toast
 }
