@@ -37,13 +37,12 @@ export default {
 
 
 <style lang="less" scoped>
+
 .van-swipe img {
   display: block;
   box-sizing: border-box;
   width: 100%;
   height: 130px;
-  // padding: 30px 60px;
-  // padding: 0 0 5px;
   background-color: #fff;
   pointer-events: none;
 }
