@@ -9,9 +9,9 @@
 
       <van-grid :clickable="true">
         <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
+        <van-grid-item icon="photo-o" text="图片" />
+        <van-grid-item icon="photo-o" text="信息" />
+        <van-grid-item icon="photo-o" text="搜索" />
       </van-grid>
     </div>
   </div>
