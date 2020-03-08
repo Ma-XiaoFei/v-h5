@@ -7,7 +7,7 @@
         </van-swipe-item>
       </van-swipe>
 
-      <van-grid :clickable='true'>
+      <van-grid :clickable="true">
         <van-grid-item icon="photo-o" text="文字" />
         <van-grid-item icon="photo-o" text="文字" />
         <van-grid-item icon="photo-o" text="文字" />
@@ -24,10 +24,10 @@ export default {
     return {
       images: [
         "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583583888976&di=146f6c19dd550655fd80db87b11e8300&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201512%2F25%2F20151225170528_Sf8Ma.jpeg",
-        "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583583888976&di=3f98c78ebad8fbd3a77130316e5265fc&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ab0058d5eac4a801219c77d2ef46.jpg",
+        "https://img95.699pic.com/photo/50055/5642.jpg_wh860.jpg",
         "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583583888975&di=1a6dced4b9066ff238e6069d3cb4fd2c&imgtype=0&src=http%3A%2F%2Fimg13.weikeimg.com%2Fdata%2Fuploads%2F2016%2F11%2F28%2F1624794157583ba2832b263.jpg",
         "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2920814812,107018119&fm=26&gp=0.jpg",
-        'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1035415831,1465727770&fm=26&gp=0.jpg'
+        "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1035415831,1465727770&fm=26&gp=0.jpg"
       ]
     };
   },

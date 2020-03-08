@@ -1,5 +1,6 @@
 # sy-app
 
+### 一个简单的 H5 vue 项目
 ## Project setup
 ```
 npm install
