@@ -10,6 +10,7 @@ Object.values(vantComponent).forEach(v=>{
   Vue.use(v);
 })
 
+
 router.beforeEach((to, from , next)=>{
   document.title = to.meta[0];
   next()
