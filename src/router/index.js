@@ -16,10 +16,16 @@ const routes = [
     component: ()=> import('@/views/Search'),
     meta:['搜索']
   },{
+    path: '/information',
+    name: 'information',
+    // component: Home,
+    meta:['信息']
+  },
+  {
     path: '/my',
     name: 'my',
     // component: Home,
-    meta:['信息']
+    meta:['我的']
   },
   {
     path: '/about',

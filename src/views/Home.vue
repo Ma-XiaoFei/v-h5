@@ -1,21 +1,22 @@
 <template>
   <div class="home">
     <div>
-      <van-swipe :autoplay="2000">
+      <van-swipe :autoplay="3000">
         <van-swipe-item v-for="(image, index) in images" :key="index">
           <img v-lazy="image" />
         </van-swipe-item>
       </van-swipe>
 
+      <van-notice-bar mode="link" @click="notice" text="实时更新：新冠肺炎疫情最新动态,全国累计确诊患者分布于个城市，目前已有个城市实现疫情病例“清零”. 新冠肺炎预防须知. 个人清洁. 经常保持双手清洁，尤其在触摸口、鼻或眼之前."/>
+
       <van-grid :clickable="true">
         <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="图片" />
-        <van-grid-item icon="photo-o" text="信息" />
-        <van-grid-item icon="photo-o" text="搜索" />
+        <van-grid-item icon="smile-o" text="图片" />
+        <van-grid-item icon="comment-o" text="信息" />
+        <van-grid-item icon="search" text="搜索" />
       </van-grid>
     </div>
   </div>
-
 </template>
 
 
@@ -33,13 +34,17 @@ export default {
       ]
     };
   },
-  components: {}
+  components: {},
+  methods:{
+    notice(){
+      window.location.href = 'https://news.qq.com/zt2020/page/feiyan.htm#/'; 
+    }
+  }
 };
 </script>
 
 
 <style lang="less" scoped>
-
 .van-swipe img {
   display: block;
   box-sizing: border-box;

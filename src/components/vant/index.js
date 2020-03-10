@@ -8,7 +8,9 @@ import {
     Lazyload,
     Grid,
     GridItem,
-    Toast
+    Toast,
+    NoticeBar
+  
 } from 'vant';
 
 export default {
@@ -21,5 +23,6 @@ export default {
     Lazyload,
     Grid,
     GridItem,
-    Toast
+    Toast,
+    NoticeBar
 }
