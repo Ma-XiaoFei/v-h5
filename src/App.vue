@@ -13,7 +13,8 @@
     <van-tabbar @change="navChange"  border active-color="red" route safe-area-inset-bottom>
       <van-tabbar-item to="/" name="首页" icon="home-o">首页</van-tabbar-item>
       <van-tabbar-item to="/search" name="搜索" icon="search">搜索</van-tabbar-item>
-      <van-tabbar-item to="/my" name="信息" icon="setting-o">信息</van-tabbar-item>
+      <van-tabbar-item to="/information" name="信息" icon="comment-o">信息</van-tabbar-item>
+      <van-tabbar-item to="/my" name="我的" icon="user-circle-o">我的</van-tabbar-item>
     </van-tabbar>
     
   </div>
